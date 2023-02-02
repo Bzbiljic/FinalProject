@@ -1,21 +1,52 @@
 body {
     width: 80%;
     margin: auto;
-    background-color: #CFB997;
+    background-image: url('wave.jpg');
+    background-size: cover;
+    background-position: center;
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  justify-content: flex-end;
 }
-.links{
-    width: 300px;
-    display: flex;
-    justify-content: space-around;
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav li {
+  margin: 0 20px;
+  
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: rgb(112, 153, 228);
+  transition: background-color 0.2s;
+  
+}
+
+nav a:hover {
+  background-color: lightgray;
+  
+}
+.logo{
+  display: flex;
+  width: 580px;
 
 }
 .logo img{
-    height: 70px;
+    height: 130px;
     border-radius: 50%;
 }
 .first {
@@ -33,12 +64,21 @@ nav{
     padding-bottom: 70px;
         
 }
+/*.wave img{
+  position: absolute;
+  transform: translate(-56%, 1%);
+  filter: blur(8px);
+  z-index: -25;
+  height: 100%;
+  width: 100%;
+}*/
 .left {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 50%;
-}
+    color: aliceblue;
+  }
 .top-img img{
     height: 300px;
     width: 300px;
@@ -68,16 +108,18 @@ nav{
     width: 60%;
     text-align: right;
     padding-left: 30px;
+    color: aliceblue;
   }
   .bottom {
     padding-top: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: aliceblue;
   }
   .bottom-img {
     display: flex;    
-    width: 40%;
+    width: 400%;
     margin-left: 30px;
   }
   
@@ -86,11 +128,42 @@ nav{
   }
   
   .bottom-text {
-    width: 60%;
+    width: 600%;
     text-align: left;
-    margin: 0;    
+    margin: 0;   
+    color: aliceblue; 
   }
   .div form {
     padding: 10%;
     background-color: FAD6A5;
+   
   }
+  .form {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 20px;
+    font-family: sans-serif;  
+    color: aliceblue; 
+
+  }
+  .name{
+    font-family: sans-serif;
+    font-style: italic; 
+    color: aliceblue;
+  }
+  .social-icons{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 60px;
+    color: aqua;
+  }
+  .about-us{
+    font-family: sans-serif;
+    padding: 10%;
+    color: aliceblue;
+    font-size: 30px;
+  }
+  
